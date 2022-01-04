@@ -1,0 +1,91 @@
+.main {
+  &__feature {
+    margin-top: rem(90);
+  }
+}
+.feature {
+  &__container {
+  }
+  &__body {
+  }
+  &__title {
+    font-size: rem(36);
+    margin-bottom: emm(30, 36);
+    text-align: center;
+    line-height: prc(43, 36);
+    color: #ffffff;
+    font-weight: 600;
+  }
+  &__items {
+    display: flex;
+
+    align-items: stretch;
+    flex-flow: row wrap;
+    column-gap: rem(30);
+    row-gap: rem(30);
+  }
+}
+.hero-item {
+  &__item {
+    flex: 1 1 rem(255);
+    padding: rem(20);
+    background: radial-gradient(2464.13% 850.69% at 100% 6.65%, #bb82db 0%, #636dc1 19.3%, #1d0f35 100%);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+
+    &:hover {
+      ._ibg img {
+        transform: scale(1.5);
+      }
+    }
+  }
+  &__img {
+    padding-bottom: 200px;
+    border-radius: 20px;
+
+    & img {
+      transition: 0.3s;
+    }
+  }
+  &__label {
+    font-size: rem(18);
+    line-height: prc(21, 18);
+    font-weight: 600;
+    margin-top: emm(12, 18);
+  }
+  &__price {
+    min-height: rem(90);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: emm(16, 14);
+    font-size: rem(14);
+
+    line-height: prc(17, 14);
+    text-transform: uppercase;
+    flex-flow: column nowrap;
+    font-weight: 600;
+    height: 100%;
+    & p:not(:last-child) {
+      margin-bottom: em(10);
+    }
+  }
+  &__button {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 47px;
+    font-size: 16px;
+    line-height: prc(19, 16);
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0px 46px;
+    border-radius: 37px;
+  }
+  &__Minprice {
+  }
+}

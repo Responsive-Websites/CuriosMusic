@@ -1,0 +1,122 @@
+.header {
+  position: relative;
+  background: url("../img/pages/heading/back.png") center no-repeat;
+  &__conatiner {
+    position: relative;
+  }
+  &__body {
+  }
+  &__map {
+    display: flex;
+
+    align-items: center;
+  }
+  &__mapInner {
+    border-top: 1px solid #423d48;
+    border-bottom: 1px solid #423d48;
+    margin-top: rem(36);
+  }
+  &__plug {
+  }
+  &__nav {
+  }
+  &__reg {
+    & img {
+      width: rem(42);
+    }
+  }
+  &__info {
+    padding-bottom: rem(160);
+  }
+}
+
+.nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 rem(42);
+  margin-right: -42px;
+
+  &__list {
+  }
+  &__item {
+    font-size: rem(14);
+    line-height: prc(17, 14);
+    color: #ffffff;
+    text-transform: uppercase;
+
+    font-weight: 600;
+    position: relative;
+    padding: emm(25, 14);
+    transition: 0.2s;
+    display: inline-block;
+    &::before {
+      opacity: 0;
+      content: "";
+      position: absolute;
+      top: -2px;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      z-index: 77;
+      background-color: rgb(148, 64, 226);
+      transition: 0.7s;
+    }
+    &:hover {
+      color: rgb(148, 64, 226);
+
+      &::before {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+    padding-top: emm(25, 14);
+    padding-bottom: emm(25, 14);
+  }
+}
+.info-header {
+  text-align: center;
+  margin-top: em(129);
+  &__title {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: rem(46);
+    line-height: prc(55, 46);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: emm(12, 46);
+
+    border: 3px solid red;
+
+    @include adaptiv-value("font-size", 46, 10, 1);
+    @include adaptiv-value("padding", 50, 10, 1);
+  }
+  &__subTitle {
+    font-size: rem(20);
+    line-height: prc(24, 20);
+    margin-bottom: emm(40, 20);
+    font-weight: 500;
+  }
+  &__button {
+    background: linear-gradient(90deg, #5d00fa 0%, #d70bca 100%);
+    border-radius: 46px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: prc(21, 18);
+
+    padding: 0px 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 49px;
+    color: #ffffff;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(0.96);
+    }
+  }
+}
