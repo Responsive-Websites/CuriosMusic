@@ -244,7 +244,6 @@ body {
   text-align: center;
   margin-bottom: 0.2608695652em;
   border: 3px solid red;
-  font-size: 46px;
   padding: 50px;
 }
 
@@ -408,10 +407,6 @@ body {
 }
 
 @media screen and (max-width: 1110px) {
-  .info-header__title {
-    font-size: calc(10px + 36 * ((100vw - 320px) / 790));
-  }
-
   .info-header__title {
     padding: calc(10px + 40 * ((100vw - 320px) / 790));
   }

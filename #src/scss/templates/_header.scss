@@ -91,7 +91,6 @@
 
     border: 3px solid red;
 
-    @include adaptiv-value("font-size", 46, 10, 1);
     @include adaptiv-value("padding", 50, 10, 1);
   }
   &__subTitle {
